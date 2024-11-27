@@ -4,6 +4,37 @@
 }
 
 ul {
-  display: flex;
   list-style: none;
+  background-color: grey;
+}
+
+ul.parent {
+  display: flex;
+  justify-content: center;
+}
+ul.parent li a {
+  padding: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+ul.parent:hover ul {
+  display: none;
+}
+ul.parent a {
+  font: 18px;
+  color: #fff;
+}
+ul.parent a:hover {
+  color: red;
+}
+ul.parent ul {
+  position: absolute;
+  display: none;
+  background-color: grey;
+}
+
+li.hover {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
