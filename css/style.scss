@@ -12,24 +12,25 @@ ul.parent{
 li{
     position: relative;
     &:hover{
+        ul{
         display: block;
     }
 }
     a{
         padding: 10px;
-        text-transform: capitalize;
-        cursor: pointer;
+        text-transform:uppercase;
         text-decoration: none;
-        font size:18px;
+        font-size:18px;
         color:#fff;
         &:hover{
             color: red;
         }
     }
 }
+}
 ul{
     position: absolute;
     display: none;
     background-color: grey;
-    width:150px;
+    top: 24px;
 }

@@ -5,36 +5,33 @@
 
 ul {
   list-style: none;
-  background-color: grey;
 }
 
 ul.parent {
   display: flex;
   justify-content: center;
+  background-color: grey;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li:hover ul {
+  display: block;
 }
 ul.parent li a {
   padding: 10px;
-  text-transform: capitalize;
-  cursor: pointer;
+  text-transform: uppercase;
   text-decoration: none;
+  font-size: 18px;
   color: #fff;
 }
-ul.parent:hover ul {
-  display: none;
-}
-ul.parent a {
-  font: 18px;
-  color: #fff;
-}
-ul.parent a:hover {
+ul.parent li a:hover {
   color: red;
 }
-ul.parent ul {
+
+ul {
   position: absolute;
   display: none;
   background-color: grey;
-}
-
-li.hover {
-  display: block;
+  top: 24px;
 }/*# sourceMappingURL=style.css.map */
