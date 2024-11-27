@@ -1,36 +1,40 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
+
 ul{
     list-style: none;
+    background-color: grey;
 }
+
 ul.parent{
     display: flex;
     justify-content: center;
-    background-color: grey;
+    padding: 10px;
 li{
     position: relative;
-    &:hover{
-        ul{
-        display: block;
-    }
-}
     a{
-        padding: 10px;
-        text-transform:uppercase;
+        padding: 5px;
+        text-transform: uppercase;
         text-decoration: none;
-        font-size:18px;
-        color:#fff;
+        font-size: 25px;
+        color: #fff;
         &:hover{
             color: red;
         }
     }
+    ul{
+        position:absolute;
+        display: none;
+        background-color: grey;
+        width: 150px;
+        top: 40px;
+    }
+    &:hover{
+        ul{
+            display: block;
+        }
+    }
 }
-}
-ul{
-    position: absolute;
-    display: none;
-    background-color: grey;
-    top: 24px;
-}
+
