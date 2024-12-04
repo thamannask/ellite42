@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+.container h2 {
+  margin-bottom: 20px;
+}
+.container input[type=email],
+.container input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.container input[type=submit] {
+  background-color: navy;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+.container input[type=submit]:hover {
+  background-color: green;
+}
+.container .checkbox {
+  margin-bottom: 15px;
+}
+.container .checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.container .forgot-password {
+  margin-top: 30px;
+}
+.container .forgot-password a {
+  color: navy;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
