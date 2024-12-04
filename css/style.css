@@ -37,6 +37,14 @@ body {
 .container input[type=submit]:hover {
   background-color: green;
 }
+.container .checkbox {
+  margin-bottom: 15px;
+}
+.container .checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
 .container .forgot-password {
   margin-top: 30px;
 }
