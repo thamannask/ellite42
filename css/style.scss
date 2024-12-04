@@ -1,40 +1,46 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-ul{
-    list-style: none;
-    background-color: grey;
-}
-
-ul.parent{
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
-    padding: 10px;
-li{
-    position: relative;
-    a{
-        padding: 5px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 25px;
-        color: #fff;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    h2{
+        margin-bottom: 20px;
+    }
+    input[type="email"],
+    input[type="password"]{
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"]{
+        background-color: navy;
+        color: white;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 180px;
+        height: 50px;
+        cursor: pointer;
         &:hover{
-            color: red;
+            background-color: green;
         }
     }
-    ul{
-        position:absolute;
-        display: none;
-        background-color: grey;
-        width: 150px;
-        top: 40px;
-    }
-    &:hover{
-        ul{
-            display: block;
+    
+    .forgot-password{
+        margin-top: 30px;
+        a{
+            color:navy;
+            text-decoration: none;
         }
     }
 }
-

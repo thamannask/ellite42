@@ -1,37 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-ul.parent {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
-  background-color: grey;
-}
-ul.parent li {
-  position: relative;
-}
-ul.parent li:hover ul {
-  display: block;
-}
-ul.parent li a {
-  padding: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff;
-}
-ul.parent li a:hover {
-  color: red;
+  align-items: center;
+  height: 100vh;
 }
 
-ul {
-  position: absolute;
-  display: none;
-  background-color: grey;
-  top: 24px;
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+.container h2 {
+  margin-bottom: 20px;
+}
+.container input[type=email],
+.container input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.container input[type=submit] {
+  background-color: navy;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+.container input[type=submit]:hover {
+  background-color: green;
+}
+.container .forgot-password {
+  margin-top: 30px;
+}
+.container .forgot-password a {
+  color: navy;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
